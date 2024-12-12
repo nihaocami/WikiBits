@@ -66,7 +66,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 setTimeout(() => {
   swiper.update();
-}, 500);
+}, 1000);
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("./service-worker.js");

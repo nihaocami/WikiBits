@@ -30,19 +30,29 @@ body {
   box-sizing: border-box;
 }
 
-.nav {
-  position: absolute;
+.navbar {
+  position: fixed;
   top: 0;
-  height: 30px;
-  padding: 1.5rem;
+  left: 0;
   width: 100%;
   background-color: #eee;
-  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 850px;
+  padding: 0 15px;
   font-size: large;
   font-weight: 700;
-  margin: 0 auto;
 }
-.nav img {
-  height: 100%;
+
+.logo {
+  height: 30px;
+  width: auto;
   border-radius: 5px;
 }
