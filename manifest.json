@@ -2,7 +2,7 @@
   "name": "WikiBits",
   "short_name": "WikiBits",
   "description": "Scroll your way to infinite knowledge and fun facts.",
-  "start_url": "/",
+  "start_url": "/WikiBits",
   "display": "standalone",
   "background_color": "#eee",
   "theme_color": "#eee",
