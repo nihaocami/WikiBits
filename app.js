@@ -29,6 +29,7 @@ async function loadNextTopic() {
 
   // Append the new topic to the swipe wrapper
   swipeWrapper.appendChild(topicElement);
+  swiper.update();
 }
 
 // Initialize the first topic when the page loads
@@ -60,7 +61,6 @@ var swiper = new Swiper(".mySwiper", {
     reachEnd: (swiper, e) => {
       loadNextTopic();
       loadNextTopic();
-      swiper.update();
     },
   },
 });
