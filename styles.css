@@ -1,0 +1,48 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  flex-direction: column;
+  font-size: 18px;
+  display: flex !important;
+  justify-content: center;
+
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: #eee;
+  z-index: 100;
+  font-size: large;
+  font-weight: 700;
+  margin: 0 auto;
+}
+.nav img {
+  height: 100%;
+  border-radius: 5px;
+}
