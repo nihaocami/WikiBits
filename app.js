@@ -70,7 +70,7 @@ setTimeout(() => {
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("/service-worker.js")
+    .register("./service-worker.js")
     .then(() => alert("service worker registerd"))
     .catch((err) => alert(err));
 }
