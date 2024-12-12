@@ -58,8 +58,7 @@ var swiper = new Swiper(".mySwiper", {
         swiper.mousewheel?.disable(); // stops the initial scroll
       }
     },
-    reachEnd: (swiper, e) => {
-      loadNextTopic();
+    reachEnd: () => {
       loadNextTopic();
     },
   },
