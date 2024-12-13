@@ -1,0 +1,58 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  flex-direction: column;
+  font-size: 18px;
+  display: flex !important;
+  justify-content: center;
+
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 850px;
+  padding: 0 15px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+  border-radius: 5px;
+}
