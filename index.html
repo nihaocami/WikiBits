@@ -10,11 +10,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module">
-      import khmyznikovpwaInstall from "https://cdn.jsdelivr.net/npm/@khmyznikov/pwa-install@0.4.8/+esm";
-    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -26,7 +21,7 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper"> </div>
     </div>
-    <pwa-install manifest-url="./manifest.json" icon="./icon.png"></pwa-install>
-    <script src="app.js"></script>
+    <pwa-install manifest-url="manifest.json" icon="./icon.png"></pwa-install>
+    <script type="module" src="src/main.ts"></script>
   </body>
 </html>

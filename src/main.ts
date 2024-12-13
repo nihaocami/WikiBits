@@ -1,3 +1,4 @@
+import Swiper from "swiper";
 const swipeWrapper = document.querySelector(".swiper-wrapper");
 // Function to fetch a random Wikipedia topic
 async function getRandomTopic() {
@@ -9,7 +10,7 @@ async function getRandomTopic() {
 }
 
 // Function to create the HTML structure for a topic
-function createTopicElement(topicData) {
+function createTopicElement(topicData: any) {
   const topicDiv = document.createElement("div");
   topicDiv.className = "swiper-slide";
   topicDiv.innerHTML = `
@@ -28,7 +29,7 @@ async function loadNextTopic() {
   const topicElement = createTopicElement(topicData);
 
   // Append the new topic to the swipe wrapper
-  swipeWrapper.appendChild(topicElement);
+  swipeWrapper?.appendChild(topicElement);
   swiper.update();
 }
 
@@ -36,7 +37,7 @@ async function loadNextTopic() {
 loadNextTopic();
 loadNextTopic();
 loadNextTopic();
-let scrollTimeout;
+let scrollTimeout: any;
 var swiper = new Swiper(".mySwiper", {
   direction: "vertical",
   slidesPerView: 1,
