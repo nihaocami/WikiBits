@@ -1,4 +1,5 @@
 import Swiper from "swiper";
+import "@khmyznikov/pwa-install";
 const swipeWrapper = document.querySelector(".swiper-wrapper");
 // Function to fetch a random Wikipedia topic
 async function getRandomTopic() {
